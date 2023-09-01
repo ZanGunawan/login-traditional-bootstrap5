@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login Sederhana</title>
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="container container-login">
+            <div class="row h-100">
+                
+                <div class="col d-flex justify-content-center align-items-center">
+                    <form class="w-75">
+                        <h3 class="text-cente mb-4 text-center">Daftarkan akunmu</h3>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Nama Lengkap</label>
+                            <input type="email" 
+                            name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" 
+                            name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <!-- <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <textarea name="message" placeholder="password" id="message" cols="30" rows="2"></textarea>
+                        </div> -->
+                        <button type="button" class="btn btn-danger w-100 mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+                        <div class="text-center mt-3">
+                            <a href="/index.html" class="text-decoration-none">Masuk</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center hidden">
+                    <img src="/img/undraw_Login_re_4vu2.png" alt="image-login" class="w-75">
+                </div>
+            </div>
+        </div>
+
+        <!-- modal -->
+        <div class="modal" tabindex="-1" id="exampleModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Halo User</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Akun mu berhasil didaftarkan </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Lanjut</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script>
+            function masuk() {
+                var email = document.getElementById("exampleInputEmail1").value;
+                var pw = document.getElementById("exampleInputPassword1").value;
+            }
+        </script>
+        <!-- <script>
+            Window.onbeforeunload = () => {
+                for (const form of document.getElementsByClassName("form")) {
+                    form.reset();
+                }
+            }
+        </script> -->
+        
+    </body>
+</html>
